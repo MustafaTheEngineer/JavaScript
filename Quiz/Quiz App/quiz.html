@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        button {
+            color: #fff;
+            background-color: cornflowerblue;
+            border: 0;
+            border-radius: 5px;
+            padding: 10px 15px;
+        }
+
+        button:not(:first-child) {
+            margin: 0 5px;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: #1753C2;
+            transition: all .1s;
+        }
+
+        #container {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        #card {
+            border: 1px solid #fff;
+            border-radius: 5px;
+        }
+
+        #card>div {
+            padding: 0 20px;
+            font-size: 18px;
+        }
+
+        #header {
+            border-bottom: 1px solid #fff;
+        }
+
+        #buttons {
+            margin: 18px 0;
+        }
+
+        #footer {
+            border-top: 1px solid #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="card">
+            <div id="header">
+                <p>Quiz</p>
+            </div>
+            <div id="body">
+                <p id="question"></p>
+                <hr>
+                <div id="buttons">
+                    <button id="0">
+                    </button>
+                    <button id="1">
+                    </button>
+                    <button id="2">
+                    </button>
+                    <button id="3">
+                    </button>
+                    <button id="4">
+                    </button>
+                </div>
+            </div>
+            <div id="footer">
+                <p>Question 1 of 5</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="quiz.js" type="text/javascript"></script>
+</body>
+
+</html>
